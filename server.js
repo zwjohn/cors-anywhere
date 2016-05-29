@@ -11,7 +11,7 @@ var originBlacklist = (process.env.CORSANYWHERE_BLACKLIST || '').split(',');
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  requireHeader: ['origin', 'x-requested-with'],
+  //requireHeader: ['origin', 'x-requested-with'],
   removeHeaders: [
     'cookie',
     'cookie2',
