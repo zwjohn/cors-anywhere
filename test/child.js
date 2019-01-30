@@ -6,7 +6,7 @@
 // process, which in turn records the change in used heap space.
 // The difference in heap space is finally sent back to the parent process.
 // ...
-// The parent process should then kill this child.
+// The parent process should then kill this child...
 
 process.on('uncaughtException', function(e) {
   console.error('Uncaught exception in child process: ' + e);
